@@ -18,7 +18,7 @@ RSpec.describe StopController, type: :controller do
 
   describe "GET #load_stop_details" do
     it "Show stop points by line results == 200" do
-      get :stop_search_by_line, :params => {:line_code => @line_code}
+      get :stop_search_by_line, :format => 'js', xhr: true, :params => {:line_code => @line_code}
       expect(response.status).to eql(200)
     end
   end
