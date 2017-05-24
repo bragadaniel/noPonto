@@ -15,13 +15,12 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-
+gem 'bootstrap-social-rails'
+gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
-
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'httpclient'
-
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -32,6 +31,7 @@ group :development, :test do
   gem 'capybara'
   gem 'rspec-rails', '~> 3.5'
   gem 'dotenv-rails'
+  gem 'spring-commands-rspec'
 end
 
 group :development do
